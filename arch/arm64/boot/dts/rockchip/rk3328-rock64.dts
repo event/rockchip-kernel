@@ -670,7 +670,7 @@
 };
 
 &wdt {
-	clocks = <&cru PCLK_WDT>;
+	clocks = <&xin24m>;
 	status = "okay";
 };
 
