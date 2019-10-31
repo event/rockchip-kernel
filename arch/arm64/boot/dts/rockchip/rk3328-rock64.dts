@@ -715,24 +715,7 @@
 };
 
 &rockchip_suspend {
-       status = "okay";
-       rockchip,sleep-mode-config = <
-              (0
-              |RKPM_CTR_PWR_DMNS
-              |RKPM_CTR_GTCLKS
-              |RKPM_CTR_PLLS
-              |RKPM_CTR_ARMOFF_LPMD
-              |RKPM_CTR_SYSCLK_OSC_DIS
-              )
-       >;
-       rockchip,wakeup-config = <
-              (0
-              | RKPM_GPIO_WKUP_EN
-              )
-       >;
-       rockchip,pwm-regulator-config = <
-              (0
-              | PWM2_REGULATOR_EN
-              )
-       >;
+    status = "okay";
+    rockchip,virtual-poweroff = <1>;
+    rockchip,wakeup-config = <RKPM_GPIO_WKUP_EN>;
 };
