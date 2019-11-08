@@ -713,9 +713,3 @@
             <0xf6   KEY_9>;
 	};
 };
-
-&rockchip_suspend {
-    status = "okay";
-    rockchip,virtual-poweroff = <1>;
-    rockchip,wakeup-config = <RKPM_GPIO_WKUP_EN>;
-};
